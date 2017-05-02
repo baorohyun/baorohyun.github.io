@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>프로필</title>
+    <style>
+    @import url(http://fonts.googleapis.com/css?family=Nunito);
+
+html {
+height: 100%;
+overflow: hidden;
+}
+
+body {
+margin:0;
+padding:0;
+perspective: 1px;
+transform-style: preserve-3d;
+height: 100%;
+overflow-y: scroll;
+overflow-x: hidden;
+font-family: Nunito;
+}
+
+h1 {
+font-size: 250%
+}
+
+p {
+font-size: 140%;
+line-height: 150%;
+color: #333;
+}
+
+.slide {
+position: relative;
+padding: 25vh 10%;
+min-height: 100vh;
+width: 100vw;
+box-sizing: border-box;
+box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+transform-style: inherit;
+}
+
+img {
+position: absolute;
+top: 50%;
+left: 35%;
+width: 320px;
+height: 240px;
+transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+padding: 10px;
+border-radius: 5px;
+background: rgba(240,230,220, .7);
+box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+img:last-of-type {
+transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+}
+
+.slide:before {
+content: "";
+position: absolute;
+top: 0;
+bottom: 0;
+left:0;
+right:0;
+}
+
+.title {
+width: 50%;
+padding: 5%;
+border-radius: 5px;
+background: rgba(240,230,220, .7);
+box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+.slide:nth-child(2n) .title {
+margin-left: 0;
+margin-right: auto;
+}
+
+.slide:nth-child(2n+1) .title {
+margin-left: auto;
+margin-right: 0;
+}
+
+.slide, .slide:before {
+background: 50% 50% / cover;
+}
+
+.header {
+text-align: center;
+font-size: 175%;
+color: #fff;
+text-shadow: 0 2px 2px #000;
+}
+
+#title {
+background-image: url("http://cfile261.uf.daum.net/image/1447B4424FAFAD3902152B");
+background-attachment: fixed;
+}
+
+#slide1:before {
+background-image: url("http://www.khuplaza.com/files/attach/images/4116637/632/710/001/a8b08b63e9b4f6295ae9f71f0b80e06f.png");
+transform: translateZ(-1px) scale(2);
+z-index:-1;
+}
+
+#slide2 {
+background-image: url("bbb.jpg");
+background-attachment: fixed;
+}
+
+#slide3:before {
+background-image: url("https://d2hmp4n7p97ldw.cloudfront.net/assets/home/om-02-7cf5a9b8b6c5c612b4a190a3c025d626b92f06cecc458c0304936e9516bde213.png");
+
+transform: translateZ(-1px) scale(2);
+z-index:-1;
+}
+
+#slide4 {
+background-image: url("http://cfile295.uf.daum.net/image/2022F3444FAFACF12B007E");
+}
+    </style>
+</head>
+<body>
+  <div id="title" class="slide header">
+  <h1>안녕하세요 김보현입니다~</h1>
+</div>
+
+<div id="slide1" class="slide">
+  <div class="title">
+    <h1>김보현은</h1>
+    <p>
+      <ul>
+        <li> 낙생고등학교 졸업</li>
+        <li> 경희대학교 재학 중</li>
+        <li> 경희대 ZONE 회원</li>
+        <li> 한식조리사 자격증 보유</li>
+        <li> 전 대농TV 자막팀장</li>
+        <li> 멋사 5기 활동 중</li>
+      </ul>
+    </p>
+  </div>
+</div>
+
+<div id="slide2" class="slide">
+  <div class="title">
+    <h1>지금은</h1>
+    <p>경희대학교 스포츠의학과 3학년입니다. 집은 분당이고 지금은 서천동에서 자취하고 있습니다. 나이는 25살이고 운동을 잘못해서 체대생 아닌척하고 다닙니다.
+       그래도 살빼는법은 빠삭하게 알려드릴 수 있습니다. 졸업을 위해 빨빨거리며 뛰어다니고 있고 코딩도 땀 뻘뻘 흘리면서 배우고 있습니다.
+        다들 너무너무 반갑습니다!!</p>
+  </div>
+  <img src="bbc.jpg" alt="해결방법을 못찾았어요">
+  <img src="bbc.jpg" alt="해결방법을 못찾았어요">
+</div>
+
+<div id="slide3" class="slide">
+  <div class="title">
+    <h1>지금 부터는 </h1>
+    <p>멋쟁이 사자처럼 5기 활동과 코딩을 열심히 배울 계획입니다. 제가 만들고 싶은 서비스를 만들겠습니다. 한번에 성공할 수는 없겠지만 작은 성공들을 이어나가겠습니다.
+       그 첫 걸음이 되는 제 자기소개 페이지를 봐주셔서 감사합니다. ㅎㅎ
+    </p>
+  </div>
+</div>
+
+<div id="slide4" class="slide header">
+  <h2>The End</h2>
+</div>
+</body>
+</html>
